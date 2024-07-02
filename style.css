@@ -1,0 +1,92 @@
+body {
+    background-color: beige;
+    font-family: Arial, sans-serif; 
+    font-size: larger;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.profile_pic {
+    width: 350px;
+    height: 400px;
+    border-radius: 10%;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.goals{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Media Query for Tablets (width between 600px and 900px) */
+@media (max-width: 900px) and (min-width: 600px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile_image {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .profile_pic {
+        width: 300px;
+        height: 300px;
+        border-radius: 10%;
+    }
+
+    .profile_details p {
+        font-size: 1rem;
+    }
+
+    .links h5 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Media Query for Phones (width up to 600px) */
+@media (max-width: 600px) {
+    .title p {
+        font-size: 2rem;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile_image img {
+        width: 200px;
+        height: 220px;
+    }
+
+    .profile_details {
+        text-align: center;
+    }
+}
