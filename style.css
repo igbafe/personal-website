@@ -26,8 +26,6 @@ body {
 }
 
 .profile_pic {
-    width: 350px;
-    height: 400px;
     border-radius: 10%;
 }
 
@@ -41,6 +39,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    max-width: 300px;
 }
 
 /* Media Query for Tablets (width between 600px and 900px) */
@@ -48,17 +47,12 @@ body {
     .profile {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .profile_image {
         margin-right: 0;
         margin-bottom: 5px;
-    }
-
-    .profile_pic {
-        width: 300px;
-        height: 300px;
-        border-radius: 10%;
     }
 
     .profile_details p {
@@ -79,11 +73,6 @@ body {
     .profile {
         flex-direction: column;
         align-items: center;
-    }
-
-    .profile_image img {
-        width: 200px;
-        height: 220px;
     }
 
     .profile_details {
